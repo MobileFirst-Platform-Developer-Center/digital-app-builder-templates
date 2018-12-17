@@ -1,0 +1,10 @@
+{
+    "version": "2",
+    "templates": [
+        {
+            "name": "Watson Chatbot",
+            "icon": "watson_chatbot/chatbot.png",
+            "templateFile": "watson_chatbot/chatbot.zip"
+        }
+    ]
+}
