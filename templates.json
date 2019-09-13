@@ -1,11 +1,6 @@
 {
-    "version": "9",
+    "version": "10",
     "templates": [
-        {
-            "name": "Watson Chatbot",
-            "icon": "watson_chatbot/chatbot.png",
-            "templateFile": "watson_chatbot/chatbot.zip"
-        },
         {
             "name": "Mod Resorts",
             "icon": "modresorts/modresortslogo.png",
