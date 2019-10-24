@@ -1,10 +1,15 @@
 {
-    "version": 9,
+    "version": 10,
     "templates": [
         {
             "name": "Mod Resorts",
             "icon": "modresorts/modresortslogo.png",
             "templateFile": "modresorts/modresorts.zip"
+        },
+        {
+            "name": "Tabs",
+            "icon": "tabs/tabs.png",
+            "templateFile": "tabs/tabs.zip"
         }
     ]
 }
