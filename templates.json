@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 4,
+    "version_v2": 5,
     "templates_v2": {
         "web": [
             {
@@ -33,7 +33,7 @@
                     "templateFile": "modresorts/ionic/modresorts.zip"
                 },
                 "react_native_template": {
-                    "templateFolder": "modresorts/reactnative/modresorts"
+                    "templateFolder": "modresorts/reactnative/modresorts/mobilefoundation"
                 }
             },
             {
@@ -44,7 +44,7 @@
                     "templateFile": "tabs/ionic/tabs.zip"
                 },
                 "react_native_template": {
-                    "templateFolder": "tabs/reactnative/tabs"
+                    "templateFolder": "tabs/reactnative/tabs/mobilefoundation"
                 }
             }
         ]
