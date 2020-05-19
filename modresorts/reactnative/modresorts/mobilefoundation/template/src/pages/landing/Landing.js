@@ -9,7 +9,6 @@ import {
   TouchableOpacity,
   Text
 } from 'react-native';
-import Icon from 'react-native-vector-icons/AntDesign';
 import styles from './LandingStyle';
 class Landing extends React.Component {
   constructor(props) {

@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 5,
+    "version_v2": 6,
     "templates_v2": {
         "web": [
             {
@@ -28,7 +28,7 @@
             {
                 "name": "Mod resorts",
                 "icon": "modresorts/modresortslogo.png",
-                "gif": "",
+                "gif": "modresorts/modresorts.gif",
                 "ionic_template": {
                     "templateFile": "modresorts/ionic/modresorts.zip"
                 },
@@ -39,7 +39,7 @@
             {
                 "name": "Tabs",
                 "icon": "tabs/tabs.png",
-                "gif": "",
+                "gif": "tabs/tabs.gif",
                 "ionic_template": {
                     "templateFile": "tabs/ionic/tabs.zip"
                 },

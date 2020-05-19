@@ -9,7 +9,6 @@ import {
   Text,
   TouchableOpacity
 } from 'react-native';
-import Icon from 'react-native-vector-icons/FontAwesome5';
 import { WLResourceRequest } from 'react-native-ibm-mobilefirst';
 
 import styles from './ReservationStyle';
@@ -54,7 +53,7 @@ class Reservation extends React.Component {
             >
               <TouchableOpacity>
                 <Text style={{ color: '#1487fa' }}>
-                  <Icon name="thumbs-up" /> {resort.likes}
+                  {resort.likes}
                 </Text>
               </TouchableOpacity>
             </View>
