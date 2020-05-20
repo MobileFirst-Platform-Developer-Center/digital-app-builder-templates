@@ -38,9 +38,9 @@ class Reservation extends React.Component {
 
   renderResorts = () => {
     let arr = [];
-    this.state.resortList.forEach(resort => {
+    this.state.resortList.forEach((resort, index) => {
       arr.push(
-        <View style={styles.card}>
+        <View style={styles.card} key={index}>
           <View style={{ alignItems: 'center', height: '85%' }}>
             <Text style={styles.titleText}>{resort.name}</Text>
             <Image source={{ uri: resort.image }} style={styles.img} />
@@ -51,10 +51,12 @@ class Reservation extends React.Component {
             <View
               style={{ flex: 1, justifyContent: 'center', paddingLeft: '4%' }}
             >
-              <TouchableOpacity>
-                <Text style={{ color: '#1487fa' }}>
-                  {resort.likes}
-                </Text>
+              <TouchableOpacity style={{ flexDirection: 'row' }}>
+                <Image
+                  source={require('../../../assets/images/likes.png')}
+                  style={{ height: 18, width: 20 }}
+                />
+                <Text style={{ color: '#1487fa' }}> {resort.likes}</Text>
               </TouchableOpacity>
             </View>
             <View
@@ -79,11 +81,8 @@ class Reservation extends React.Component {
     return (
       <>
         <StatusBar barStyle="dark-content" />
-        <SafeAreaView>
-          <ScrollView
-            contentInsetAdjustmentBehavior="automatic"
-            style={styles.scrollView}
-          >
+        <SafeAreaView style={styles.conatiner}>
+          <ScrollView style={styles.scrollView}>
             <Text
               style={{
                 color: '#ffffff',
@@ -96,7 +95,7 @@ class Reservation extends React.Component {
             >
               Resorts
             </Text>
-            {this.renderResorts()}
+            <View style={{ height: '85%' }}>{this.renderResorts()}</View>
           </ScrollView>
           <ImageBackground
             style={[styles.component, styles.fixed, { zIndex: -1 }]}

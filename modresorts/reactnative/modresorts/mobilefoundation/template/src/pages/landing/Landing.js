@@ -6,8 +6,7 @@ import {
   StatusBar,
   ImageBackground,
   Image,
-  TouchableOpacity,
-  Text
+  TouchableOpacity
 } from 'react-native';
 import styles from './LandingStyle';
 class Landing extends React.Component {
@@ -19,7 +18,7 @@ class Landing extends React.Component {
     return (
       <>
         <StatusBar />
-        <SafeAreaView>
+        <SafeAreaView style={styles.container}>
           <ScrollView
             contentInsetAdjustmentBehavior="automatic"
             style={styles.scrollView}

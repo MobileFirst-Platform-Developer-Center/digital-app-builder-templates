@@ -1,12 +1,10 @@
 import React from 'react';
 import {
-  StyleSheet,
   ScrollView,
   View,
   Text,
   TextInput,
   StatusBar,
-  Dimensions,
   Image,
   TouchableOpacity
 } from 'react-native';
@@ -69,7 +67,7 @@ class ChatBot extends React.Component {
     this.state.messages.map((message, index) => {
       if (message.isWatson) {
         renderMessages.push(
-          <View style={styles.userMsgContainer}>
+          <View style={styles.userMsgContainer} key={index}>
             <View style={styles.botImgContainer}>
               <Image
                 source={require('../../../assets/images/bot.png')}
@@ -87,7 +85,7 @@ class ChatBot extends React.Component {
         );
       } else {
         renderMessages.push(
-          <View style={styles.botMsg}>
+          <View style={styles.botMsg} key={index}>
             <Text style={styles.botChatText}>{message.msg}</Text>
           </View>
         );

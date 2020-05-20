@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { TouchableOpacity, Text } from 'react-native';
+import { TouchableOpacity, Image } from 'react-native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
@@ -13,7 +13,9 @@ const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const Tabs = createBottomTabNavigator();
 
-const back = <Text>Hello</Text>;
+logout = () => {
+  console.log('Logout');
+};
 const AppNavigator = () => (
   <NavigationContainer>
     <Stack.Navigator initialRouteName="Home">
@@ -26,7 +28,17 @@ const AppNavigator = () => (
         options={{
           title: null,
           headerRight: () => (
-            <TouchableOpacity style={{ paddingRight: 3 }}></TouchableOpacity>
+            <TouchableOpacity
+              style={{ paddingRight: 3 }}
+              onPress={() => {
+                this.logout();
+              }}
+            >
+              <Image
+                style={{ height: 25, width: 25 }}
+                source={require('../assets/images/logout.png')}
+              />
+            </TouchableOpacity>
           )
         }}
         name="Landing"

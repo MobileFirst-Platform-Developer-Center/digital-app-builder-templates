@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 6,
+    "version_v2": 7,
     "templates_v2": {
         "web": [
             {
@@ -42,9 +42,14 @@
                 "gif": "tabs/tabs.gif",
                 "ionic_template": {
                     "templateFile": "tabs/ionic/tabs.zip"
-                },
+                }
+            },
+            {
+                "name": "Tabs Elegance",
+                "icon": "tabsElegance/tabsElegance.png",
+                "gif": "tabsElegance/tabsElegance.gif",
                 "react_native_template": {
-                    "templateFolder": "tabs/reactnative/tabs/mobilefoundation"
+                    "templateFolder": "tabsElegance/reactnative/tabs/mobilefoundation"
                 }
             }
         ]

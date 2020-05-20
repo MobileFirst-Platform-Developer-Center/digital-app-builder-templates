@@ -43,22 +43,22 @@ class Home extends React.Component {
     });
   };
   login() {
-    // this.props.navigation.navigate('Landing');
-    const creds = {
-      username: this.state.username,
-      password: this.state.password
-    };
-    // enter your security check name
-    const securityCheckName = 'UserLogin';
-    WLAuthorizationManager.login(securityCheckName, creds).then(
-      response => {
-        console.log('login success');
-        this.props.navigation.navigate('Landing');
-      },
-      error => {
-        console.log(`error in login  page${JSON.stringify(error)}`);
-      }
-    );
+    this.props.navigation.navigate('Landing');
+    // const creds = {
+    //   username: this.state.username,
+    //   password: this.state.password
+    // };
+    // // enter your security check name
+    // const securityCheckName = 'UserLogin';
+    // WLAuthorizationManager.login(securityCheckName, creds).then(
+    //   response => {
+    //     console.log('login success');
+    //     this.props.navigation.navigate('Landing');
+    //   },
+    //   error => {
+    //     console.log(`error in login  page${JSON.stringify(error)}`);
+    //   }
+    // );
   }
   render() {
     return (
