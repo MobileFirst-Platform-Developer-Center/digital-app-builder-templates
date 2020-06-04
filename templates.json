@@ -27,7 +27,7 @@
         "mobile": [
             {
                 "name": "Mod resorts",
-                "icon": "modresorts/modresortslogo.png",
+                "icon": "modresorts/modresortslogo2.png",
                 "gif": "modresorts/modresorts.gif",
                 "ionic_template": {
                     "templateFile": "modresorts/ionic/modresorts.zip"
@@ -38,7 +38,7 @@
             },
             {
                 "name": "Tabs",
-                "icon": "tabs/tabs.png",
+                "icon": "tabs/tabs2.png",
                 "gif": "tabs/tabs.gif",
                 "ionic_template": {
                     "templateFile": "tabs/ionic/tabs.zip"
