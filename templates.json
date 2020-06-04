@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 7,
+    "version_v2": 8,
     "templates_v2": {
         "web": [
             {
