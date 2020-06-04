@@ -36,29 +36,26 @@ class Home extends React.Component {
     });
   };
   onLoginsuccess = val => {
-    // uncomment this code and setup navigation
-    this.props.navigation.navigateTo('Landing');
+    this.props.navigation.navigate('Landing');
     this.setState({
       user: val.user.displayName
     });
   };
   login() {
-    this.props.navigation.navigate('Landing');
-    // const creds = {
-    //   username: this.state.username,
-    //   password: this.state.password
-    // };
-    // // enter your security check name
-    // const securityCheckName = 'UserLogin';
-    // WLAuthorizationManager.login(securityCheckName, creds).then(
-    //   response => {
-    //     console.log('login success');
-    //     this.props.navigation.navigate('Landing');
-    //   },
-    //   error => {
-    //     console.log(`error in login  page${JSON.stringify(error)}`);
-    //   }
-    // );
+    const creds = {
+      username: this.state.username,
+      password: this.state.password
+    };
+    // enter your security check name
+    const securityCheckName = 'UserLogin';
+    WLAuthorizationManager.login(securityCheckName, creds).then(
+      response => {
+        console.log('login success');
+      },
+      error => {
+        console.log(`error in login  page${JSON.stringify(error)}`);
+      }
+    );
   }
   render() {
     return (
