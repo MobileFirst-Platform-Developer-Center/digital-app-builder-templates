@@ -11,5 +11,47 @@
             "icon": "tabs/tabs.png",
             "templateFile": "tabs/tabs.zip"
         }
-    ]
+    ],
+    "version_v2": 1,
+    "templates_v2": {
+        "web": [
+            {
+                "name": "resorts",
+                "icon": "",
+                "gif": "",
+                "reactjs_template": {
+                    "templateFolder": "modresorts/reactnative/modresorts"
+                }
+            }
+        ],
+        "mobile": [
+            {
+                "name": "Mod resorts",
+                "icon": "modresorts/modresortslogo2.png",
+                "gif": "modresorts/modresorts.gif",
+                "ionic_template": {
+                    "templateFile": "modresorts/ionic/modresorts.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "modresorts/reactnative/modresorts/mobilefoundation"
+                }
+            },
+            {
+                "name": "Tabs",
+                "icon": "tabs/tabs2.png",
+                "gif": "tabs/tabs.gif",
+                "ionic_template": {
+                    "templateFile": "tabs/ionic/tabs.zip"
+                }
+            },
+            {
+                "name": "Tabs Elegance",
+                "icon": "tabsElegance/tabsElegance.png",
+                "gif": "tabsElegance/tabsElegance.gif",
+                "react_native_template": {
+                    "templateFolder": "tabsElegance/reactnative/tabs/mobilefoundation"
+                }
+            }
+        ]
+    }
 }
