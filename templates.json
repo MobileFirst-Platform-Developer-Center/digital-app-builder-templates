@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 1,
+    "version_v2": 2,
     "templates_v2": {
         "web": [
             {
@@ -25,6 +25,39 @@
             }
         ],
         "mobile": [
+            {
+                "name": "Simplistic",
+                "icon": "simplistic/simplistic.png",
+                "gif": "simplistic/simplistic.gif",
+                "ionic_template": {
+                    "templateFile": "simplistic/ionic/simplistic.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "simplistic/reactnative/simplistic/mobilefoundation"
+                }
+            },
+            {
+                "name": "Jazz",
+                "icon": "jazz/jazz.png",
+                "gif": "jazz/jazz.gif",
+                "ionic_template": {
+                    "templateFile": "jazz/ionic/jazz.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "jazz/reactnative/jazz/mobilefoundation"
+                }
+            },
+            {
+                "name": "Radiance",
+                "icon": "radiance/radiance.png",
+                "gif": "radiance/radiance.gif",
+                "ionic_template": {
+                    "templateFile": "radiance/ionic/radiance.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "radiance/reactnative/radiance/mobilefoundation"
+                }
+            },
             {
                 "name": "Mod resorts",
                 "icon": "modresorts/modresortslogo2.png",
@@ -50,6 +83,25 @@
                 "gif": "tabsElegance/tabsElegance.gif",
                 "react_native_template": {
                     "templateFolder": "tabsElegance/reactnative/tabs/mobilefoundation"
+                }
+            },
+            {
+                "name": "Covid19",
+                "icon": "covid19/covid19.png",
+                "gif": "covid19/covid19.gif",
+                "ionic_template": {
+                    "templateFile": "covid19/ionic/modrecovid19.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": " covid19/reactnative/covid19/mobilefoundation"
+                }
+            },
+            {
+                "name": "Purple Bank",
+                "icon": "purpleBank/purpleBank.png",
+                "gif": "purpleBank/purpleBank.gif",
+                "ionic_template": {
+                    "templateFile": "purpleBank/ionic/purpleBank.zip"
                 }
             }
         ]
