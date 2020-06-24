@@ -90,7 +90,7 @@
                 "icon": "covid19/covid19.png",
                 "gif": "covid19/covid19.gif",
                 "ionic_template": {
-                    "templateFile": "covid19/ionic/modrecovid19.zip"
+                    "templateFile": "covid19/ionic/covid19.zip"
                 },
                 "react_native_template": {
                     "templateFolder": "covid19/reactnative/covid19/mobilefoundation"
