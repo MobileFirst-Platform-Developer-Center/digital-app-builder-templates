@@ -21,7 +21,6 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     color: '#FFFFFF',
     textAlign: 'center',
-    fontFamily: 'Lato-Bold',
     marginTop: 20
   },
   chatContainer: {

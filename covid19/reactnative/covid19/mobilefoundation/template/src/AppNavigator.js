@@ -7,8 +7,7 @@ import Home from './pages/home/Home';
 import Landing from './pages/landing/Landing';
 import Stats from './pages/stats/Stats';
 import Chatbot from './pages/chatbot/Chatbot';
-import { Text } from 'react-native';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { Text, Image } from 'react-native';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
@@ -29,7 +28,12 @@ const AppNavigator = () => (
         component={Landing}
         options={{
           tabBarIcon: () => {
-            return <Icon name="home" size={20} />;
+            return (
+              <Image
+                source={require('../assets/images/home.png')}
+                style={{ height: 20, width: 20 }}
+              />
+            );
           }
         }}
       />
@@ -38,7 +42,12 @@ const AppNavigator = () => (
         component={Stats}
         options={{
           tabBarIcon: () => {
-            return <Icon name="timeline" size={20} />;
+            return (
+              <Image
+                source={require('../assets/images/stat.png')}
+                style={{ height: 20, width: 20 }}
+              />
+            );
           }
         }}
       />
@@ -47,7 +56,12 @@ const AppNavigator = () => (
         component={Chatbot}
         options={{
           tabBarIcon: () => {
-            return <Icon name="chat" size={20} />;
+            return (
+              <Image
+                source={require('../assets/images/chat.png')}
+                style={{ height: 20, width: 20 }}
+              />
+            );
           }
         }}
       />

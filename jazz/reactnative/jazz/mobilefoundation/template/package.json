@@ -20,7 +20,8 @@
     "react-native-reanimated": "1.7.0",
     "react-native-safe-area-context": "0.7.2",
     "react-native-screens": "2.0.0-alpha.29",
-    "react-native-ibm-mobilefirst":"8.0.2020032412"
+    "react-native-ibm-mobilefirst": "8.0.2020032412",
+    "react-native-swiper": "1.6.0-rc.3"
   },
   "devDependencies": {
     "@babel/core": "7.6.2",

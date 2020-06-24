@@ -52,7 +52,7 @@ class Login extends React.Component {
       username: this.state.username,
       password: this.state.password
     };
-    const securityCheckName = '';
+    const securityCheckName = 'UserLogin';
     WLAuthorizationManager.login(securityCheckName, creds).then(
       response => {
         console.log('login success');

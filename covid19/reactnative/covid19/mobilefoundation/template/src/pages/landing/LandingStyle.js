@@ -34,16 +34,14 @@ const styles = StyleSheet.create({
     color: '#484848',
     fontSize: 40,
     textAlign: 'left',
-    marginLeft: 20,
-    fontFamily: 'Lato-Black'
+    marginLeft: 20
   },
   subTitle: {
     color: '#484848',
     fontSize: 24,
     textAlign: 'left',
     marginLeft: 20,
-    marginTop: 20,
-    fontFamily: 'Lato-Regular'
+    marginTop: 20
   },
   subtext: {
     color: '#484848',
@@ -51,8 +49,7 @@ const styles = StyleSheet.create({
     textAlign: 'left',
     marginLeft: 20,
     marginTop: 20,
-    fontWeight: '400',
-    fontFamily: 'Lato-Regular'
+    fontWeight: '400'
   },
   textDesc: {
     color: '#FFFFFF',
@@ -70,8 +67,7 @@ const styles = StyleSheet.create({
     borderRadius: 40
   },
   btnText: {
-    color: '#FFFFFF',
-    fontFamily: 'Lato-Bold'
+    color: '#FFFFFF'
   },
   btnContainer: {
     flexDirection: 'row',
@@ -86,7 +82,6 @@ const styles = StyleSheet.create({
   prevTitle: {
     marginTop: 20,
     fontSize: 27,
-    fontFamily: 'Lato-Bold',
     color: '#484848'
   },
   icons: {
@@ -102,8 +97,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   prevIconText: {
-    fontSize: 10,
-    fontFamily: 'Lato-Regular'
+    fontSize: 10
   }
 });
 

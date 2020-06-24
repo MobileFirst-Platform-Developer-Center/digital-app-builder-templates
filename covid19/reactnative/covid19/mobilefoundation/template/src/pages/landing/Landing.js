@@ -5,9 +5,9 @@ import {
   View,
   Text,
   StatusBar,
-  Button
+  Button,
+  Image
 } from 'react-native';
-import LottieView from 'lottie-react-native';
 
 import styles from './LandingStyle';
 
@@ -44,40 +44,32 @@ export class Landing extends React.Component {
               }}
             >
               <View style={styles.prevIconContainer}>
-                <LottieView
-                  style={styles.icons}
-                  source={require('./01.json')}
-                  autoPlay
-                  loop
+                <Image
+                  source={require('../../../assets/images/handWash.png')}
+                  style={{ height: 90, width: 90 }}
                 />
                 <Text style={styles.prevIconText}>
                   Regularly wash your hands
                 </Text>
               </View>
               <View style={styles.prevIconContainer}>
-                <LottieView
-                  style={styles.icons}
-                  source={require('./02.json')}
-                  autoPlay
-                  loop
+                <Image
+                  source={require('../../../assets/images/mask.png')}
+                  style={{ height: 90, width: 90 }}
                 />
                 <Text style={styles.prevIconText}>Always wear a mask</Text>
               </View>
               <View style={styles.prevIconContainer}>
-                <LottieView
-                  style={styles.icons}
-                  source={require('./03.json')}
-                  autoPlay
-                  loop
+                <Image
+                  source={require('../../../assets/images/sanitizer.png')}
+                  style={{ height: 90, width: 90 }}
                 />
                 <Text style={styles.prevIconText}>Use hand sanitizer</Text>
               </View>
               <View style={styles.prevIconContainer}>
-                <LottieView
-                  style={styles.icons}
-                  source={require('./05.json')}
-                  autoPlay
-                  loop
+                <Image
+                  source={require('../../../assets/images/shake.png')}
+                  style={{ height: 90, width: 90 }}
                 />
                 <Text style={styles.prevIconText}>Social Distancing</Text>
               </View>

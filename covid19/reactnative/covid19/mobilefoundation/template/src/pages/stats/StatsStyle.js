@@ -36,8 +36,7 @@ const styles = StyleSheet.create({
     color: '#484848',
     fontSize: 40,
     textAlign: 'left',
-    marginLeft: 0,
-    fontFamily: 'Lato-Bold'
+    marginLeft: 0
   },
   textDesc: {
     color: '#FFFFFF',
@@ -48,7 +47,6 @@ const styles = StyleSheet.create({
   country: {
     color: '#484848',
     fontSize: 30,
-    fontFamily: 'Lato-Bold',
     marginTop: 20
   },
   statContainer: {
@@ -100,11 +98,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   },
   statTitle: {
-    fontFamily: 'Lato-Bold',
     fontSize: 24
   },
   statNumber: {
-    fontFamily: 'Lato-Bold',
     fontSize: 31,
     marginTop: 31
   }

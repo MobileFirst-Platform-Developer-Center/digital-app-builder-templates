@@ -1,11 +1,11 @@
 import {
-    StyleSheet
+  StyleSheet
 } from 'react-native';
 
 export const globalStyles = StyleSheet.create({
-    primaryColor: ''
+  primaryColor: ''
 });
 
 export const colors = StyleSheet.create({
-    primaryColor: ''
+  primaryColor: ''
 });

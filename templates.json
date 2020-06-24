@@ -12,7 +12,7 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 2,
+    "version_v2": 3,
     "templates_v2": {
         "web": [
             {
@@ -93,7 +93,7 @@
                     "templateFile": "covid19/ionic/modrecovid19.zip"
                 },
                 "react_native_template": {
-                    "templateFolder": " covid19/reactnative/covid19/mobilefoundation"
+                    "templateFolder": "covid19/reactnative/covid19/mobilefoundation"
                 }
             },
             {

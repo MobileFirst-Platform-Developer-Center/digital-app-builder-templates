@@ -26,8 +26,7 @@ class Login extends React.Component {
     WLClient.registerChallengeHandler(userLoginCH, '');
   }
   onLoginsuccess = val => {
-    // uncomment this code and setup navigation
-    // this.props.navigation.navigateTo('');
+    this.props.navigation.navigateTo('Home');
     this.refs.defaultToastBottom.ShowToastFunction(
       `Hello, ${val.user.displayName}`
     );
@@ -49,17 +48,17 @@ class Login extends React.Component {
     });
   };
   login() {
-    this.props.navigation.navigate('Home');
-    // var creds = { "username" : this.state.username ,
-    //       "password" : this.state.password
-    //     };
-    // const securityCheckName = '';
-    // WLAuthorizationManager.login(securityCheckName, creds).then((response)=>{
-    //     console.log('login success');
-    // },(error)=>{
-    //   this.refs.defaultToastBottom.ShowToastFunction(`${JSON.parse(error.message).errorMsg}`);
-    //   console.log('error in login  page'+ JSON.stringify(error));
-    // })
+    var creds = {
+      "username": this.state.username,
+      "password": this.state.password
+    };
+    const securityCheckName = 'UserLogin';
+    WLAuthorizationManager.login(securityCheckName, creds).then((response) => {
+      console.log('login success');
+    }, (error) => {
+      this.refs.defaultToastBottom.ShowToastFunction(`${JSON.parse(error.message).errorMsg}`);
+      console.log('error in login  page' + JSON.stringify(error));
+    })
   }
   render() {
     return (

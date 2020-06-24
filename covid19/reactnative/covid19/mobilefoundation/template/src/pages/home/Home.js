@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -9,21 +9,30 @@ import {
 
 import styles from './HomeStyle';
 
-const Home: () => React$Node = () => {
-  return (
-    <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <View style={styles.body}>
-           <Text style={styles.welcome}>Welcome to IBM Digital App Builder</Text>
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </>
-  );
+class Home extends Component{
+
+  state = {
+    features : {},
+    properties: {}
+  }
+
+  render(){
+    return (
+      <>
+        <StatusBar barStyle="dark-content" />
+        <SafeAreaView>
+          <ScrollView
+            contentInsetAdjustmentBehavior="automatic"
+            style={styles.scrollView}>
+            <View style={styles.body}>
+             <Text style={styles.welcome}>Welcome to IBM Digital App Builder</Text>
+            </View>
+          </ScrollView>
+        </SafeAreaView>
+      </>
+    );
+  }
+  
 };
 
 export default Home;
