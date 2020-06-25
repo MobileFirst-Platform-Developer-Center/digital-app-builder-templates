@@ -1,0 +1,77 @@
+import { Dimensions, StyleSheet } from 'react-native';
+
+const styles = StyleSheet.create({
+  parent: {
+    backgroundColor: '#25313c',
+    flex: 1,
+  },
+  waveContainerOne: {
+    backgroundColor: '#A899FA',
+    position: 'absolute',
+    right: Dimensions.get('window').width * 0.1,
+    bottom: Dimensions.get('window').width * -0.8,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width - 20,
+    borderRadius: Dimensions.get('window').width / 2,
+    transform: [{ scaleX: 2 }, { rotate: '40deg' }],
+    opacity: 0.7,
+  },
+  waveContainerTwo: {
+    backgroundColor: '#B8BFE9',
+    position: 'absolute',
+    left: Dimensions.get('window').width * 0.1,
+    bottom: Dimensions.get('window').width * -0.72,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width - 20,
+    borderRadius: Dimensions.get('window').width / 2,
+    transform: [{ scaleX: 2 }, { rotate: '-30deg' }],
+    opacity: 0.5,
+  },
+  waveContainerThree: {
+    backgroundColor: '#297d988a',
+    position: 'absolute',
+    right: Dimensions.get('window').width * 0.1,
+    bottom: Dimensions.get('window').width * -0.72,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width - 20,
+    borderRadius: Dimensions.get('window').width / 2,
+    transform: [{ scaleX: 2 }, { rotate: '-20deg' }],
+    opacity: 0.5,
+  },
+  waveContainerFour: {
+    backgroundColor: '#3591AE',
+    position: 'absolute',
+    right: Dimensions.get('window').width * 0.1,
+    bottom: Dimensions.get('window').width * -0.72,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width - 20,
+    borderRadius: Dimensions.get('window').width / 2,
+    transform: [{ scaleX: 2 }, { rotate: '-20deg' }],
+    opacity: 0.5,
+  },
+  waveContainerFive: {
+    backgroundColor: '#297d98',
+    position: 'absolute',
+    right: Dimensions.get('window').width * 0.1,
+    bottom: Dimensions.get('window').width * -0.72,
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').width - 20,
+    borderRadius: Dimensions.get('window').width / 2,
+    transform: [{ scaleX: 2 }, { rotate: '10deg' }],
+    opacity: 0.5,
+  },
+  text: {
+    color: '#FFFFFF',
+    fontSize: 20,
+    textAlign: 'center',
+    marginTop: 10,
+  },
+  textDesc: {
+    color: '#FFFFFF',
+    fontSize: 15,
+    textAlign: 'center',
+    marginTop: 5,
+  },
+});
+
+export default styles;
