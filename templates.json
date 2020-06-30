@@ -28,7 +28,7 @@
                 "icon": "webTemplates/reactRouterRedux/reactRouterRedux.png",
                 "gif": "webTemplates/reactRouterRedux/reactRouterRedux.gif",
                 "reactjs_template": {
-                    "templateFolder": "webTemplates/cra-template-react_router_redux"
+                    "templateFolder": "webTemplates/reactRouterRedux/cra-template-react_router_redux"
                 }
             }
         ],
