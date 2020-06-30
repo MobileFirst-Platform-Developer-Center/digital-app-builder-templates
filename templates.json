@@ -12,19 +12,73 @@
             "templateFile": "tabs/tabs.zip"
         }
     ],
-    "version_v2": 4,
+    "version_v2": 2,
     "templates_v2": {
         "web": [
             {
-                "name": "resorts",
-                "icon": "",
-                "gif": "",
+                "name": "React Router",
+                "icon": "webTemplates/reactRouter/reactRouter.png",
+                "gif": "webTemplates/reactRouter/reactRouter.gif",
                 "reactjs_template": {
-                    "templateFolder": "modresorts/reactnative/modresorts"
+                    "templateFolder": "webTemplates/reactRouter/cra-template-react_router"
+                }
+            },
+            {
+                "name": "React Router with Redux",
+                "icon": "webTemplates/reactRouterRedux/reactRouterRedux.png",
+                "gif": "webTemplates/reactRouterRedux/reactRouterRedux.gif",
+                "reactjs_template": {
+                    "templateFolder": "webTemplates/cra-template-react_router_redux"
                 }
             }
         ],
         "mobile": [
+            {
+                "name": "Purple Bank",
+                "icon": "purpleBank/purpleBank.png",
+                "gif": "purpleBank/purpleBank.gif",
+                "ionic_template": {
+                    "templateFile": "purpleBank/ionic/purpleBank.zip"
+                }
+            },
+            {
+                "name": "Covid19",
+                "icon": "covid19/covid19.png",
+                "gif": "covid19/covid19.gif",
+                "ionic_template": {
+                    "templateFile": "covid19/ionic/covid19.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "covid19/reactnative/covid19/mobilefoundation"
+                }
+            },
+            {
+                "name": "Mod resorts",
+                "icon": "modresorts/modresortslogo2.png",
+                "gif": "modresorts/modresorts.gif",
+                "ionic_template": {
+                    "templateFile": "modresorts/ionic/modresorts.zip"
+                },
+                "react_native_template": {
+                    "templateFolder": "modresorts/reactnative/modresorts/mobilefoundation"
+                }
+            },
+            {
+                "name": "Tabs",
+                "icon": "tabs/tabs2.png",
+                "gif": "tabs/tabs.gif",
+                "ionic_template": {
+                    "templateFile": "tabs/ionic/tabs.zip"
+                }
+            },
+            {
+                "name": "Tabs Elegance",
+                "icon": "tabsElegance/tabsElegance.png",
+                "gif": "tabsElegance/tabsElegance.gif",
+                "react_native_template": {
+                    "templateFolder": "tabsElegance/reactnative/tabs/mobilefoundation"
+                }
+            },
             {
                 "name": "Simplistic",
                 "icon": "simplistic/simplistic.png",
@@ -56,52 +110,6 @@
                 },
                 "react_native_template": {
                     "templateFolder": "radiance/reactnative/radiance/mobilefoundation"
-                }
-            },
-            {
-                "name": "Mod resorts",
-                "icon": "modresorts/modresortslogo2.png",
-                "gif": "modresorts/modresorts.gif",
-                "ionic_template": {
-                    "templateFile": "modresorts/ionic/modresorts.zip"
-                },
-                "react_native_template": {
-                    "templateFolder": "modresorts/reactnative/modresorts/mobilefoundation"
-                }
-            },
-            {
-                "name": "Tabs",
-                "icon": "tabs/tabs2.png",
-                "gif": "tabs/tabs.gif",
-                "ionic_template": {
-                    "templateFile": "tabs/ionic/tabs.zip"
-                }
-            },
-            {
-                "name": "Tabs Elegance",
-                "icon": "tabsElegance/tabsElegance.png",
-                "gif": "tabsElegance/tabsElegance.gif",
-                "react_native_template": {
-                    "templateFolder": "tabsElegance/reactnative/tabs/mobilefoundation"
-                }
-            },
-            {
-                "name": "Covid19",
-                "icon": "covid19/covid19.png",
-                "gif": "covid19/covid19.gif",
-                "ionic_template": {
-                    "templateFile": "covid19/ionic/covid19.zip"
-                },
-                "react_native_template": {
-                    "templateFolder": "covid19/reactnative/covid19/mobilefoundation"
-                }
-            },
-            {
-                "name": "Purple Bank",
-                "icon": "purpleBank/purpleBank.png",
-                "gif": "purpleBank/purpleBank.gif",
-                "ionic_template": {
-                    "templateFile": "purpleBank/ionic/purpleBank.zip"
                 }
             }
         ]

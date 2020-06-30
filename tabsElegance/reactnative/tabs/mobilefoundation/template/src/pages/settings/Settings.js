@@ -1,9 +1,19 @@
 import React from 'react';
 import { View, Text, Image, TouchableOpacity } from 'react-native';
-
+import { WLClient, WLAuthorizationManager } from 'react-native-ibm-mobilefirst';
 import styles from './SettingsStyle';
+
 logout = () => {
-  console.log('Logout');
+  WLAuthorizationManager.logout('UserLogin').then(
+    () => {
+      WL.Logger.debug('logout onSuccess');
+      this.props.navigation.navigate('Login');
+    },
+    response => {
+      WL.Logger.error('logout onFailure: ' + JSON.stringify(response));
+    }
+  );
+
 };
 const Settings: () => React$Node = () => (
   <>

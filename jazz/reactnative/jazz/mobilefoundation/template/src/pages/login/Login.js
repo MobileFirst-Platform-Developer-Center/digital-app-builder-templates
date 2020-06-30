@@ -26,7 +26,7 @@ class Login extends React.Component {
     WLClient.registerChallengeHandler(userLoginCH, '');
   }
   onLoginsuccess = val => {
-    this.props.navigation.navigateTo('Home');
+    this.props.navigation.navigate('Home');
     this.refs.defaultToastBottom.ShowToastFunction(
       `Hello, ${val.user.displayName}`
     );

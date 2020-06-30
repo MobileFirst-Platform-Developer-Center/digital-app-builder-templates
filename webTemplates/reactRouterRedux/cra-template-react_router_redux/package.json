@@ -1,0 +1,17 @@
+{
+  "name": "cra-template-react_router_redux",
+  "version": "0.0.1",
+  "description": "Clean and minimalist ReactJs web template for a quick start with MobileFoundation.",
+  "main": "template.json",
+  "keywords": [
+    "react",
+    "create-react-app",
+    "cra-template",
+    "template",
+    "prettier"
+  ],
+  "files": [
+    "template",
+    "template.json"
+  ]
+}
