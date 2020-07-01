@@ -1,0 +1,39 @@
+html {
+    height: 100%;
+  }
+  body {
+    min-height: 100%;
+  }
+.custButton{
+    background-color: #104f62;
+    border: none;
+    color: white;
+  padding: 3% 3% 2% 2%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  width: 100%;
+  font-family: Book Antiqua;
+}
+.custButton:hover{
+    background-color: #040d1f;
+}
+.custButton[disabled]{
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+input{
+    border: 2px solid #78abbb; 
+  }
+.card{
+        padding: 4em;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        background-image: linear-gradient(to right, #040d1f , #78abbb);
+        margin-top: 10%;
+}

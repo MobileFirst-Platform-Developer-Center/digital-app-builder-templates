@@ -8,13 +8,23 @@ import Home from './pages/home/Home';
 import Landing from './pages/landing/Landing';
 import Reservation from './pages/reservations/Reservation';
 import ChatBot from './pages/ChatBot/ChatBot';
+import { WLClient, WLAuthorizationManager } from 'react-native-ibm-mobilefirst';
 
 const Stack = createStackNavigator();
 const Drawer = createDrawerNavigator();
 const Tabs = createBottomTabNavigator();
 
 logout = () => {
-  console.log('Logout');
+  WLAuthorizationManager.logout('UserLogin').then(
+    () => {
+      WL.Logger.debug('logout onSuccess');
+      this.props.navigation.navigate('Home');
+    },
+    response => {
+      WL.Logger.error('logout onFailure: ' + JSON.stringify(response));
+    }
+  );
+
 };
 const AppNavigator = () => (
   <NavigationContainer>

@@ -1,0 +1,13 @@
+.btn{
+    background-color: #78abbb;
+    border: none;
+    color: white;
+    width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10%;
+}
+.btn:hover{
+    background-color: #091b40;
+}

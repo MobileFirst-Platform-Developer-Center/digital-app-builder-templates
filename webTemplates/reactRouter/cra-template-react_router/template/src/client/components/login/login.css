@@ -1,0 +1,39 @@
+body{
+    background-size: 100%;
+    background-image: linear-gradient(to right, #3529b8 , #bab5eb);
+}
+.custButton{
+    background-color: #7066e4;
+    border: none;
+    color: white;
+  padding: 3% 3%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  width: 100%;
+}
+.custButton:hover{
+    background-color: #4a3fba;
+}
+.custButton[disabled]{
+  opacity: 0.4;
+  cursor: default;
+  pointer-events: none;
+}
+input{
+    border: 2px solid #a19bdf; 
+  }
+.card{
+        padding: 4em;
+        border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        margin-top: 10%;
+        border: 1px solid #a19bdf;
+        box-shadow: 10px 10px 4px #a19bdf;
+}
