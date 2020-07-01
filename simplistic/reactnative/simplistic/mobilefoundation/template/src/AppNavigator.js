@@ -23,7 +23,7 @@ const AppNavigator = () => (
         component={Login}
         options={{ headerShown: false, title: null }}
       />
-      <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Home" component={Home} options={{ headerLeft: null }} />
       <Stack.Screen name="Chat Bot" component={Chat} />
       <Stack.Screen name="List" component={List} />
       <Stack.Screen

@@ -6,14 +6,12 @@ import styles from './SettingsStyle';
 logout = () => {
   WLAuthorizationManager.logout('UserLogin').then(
     () => {
-      WL.Logger.debug('logout onSuccess');
       this.props.navigation.navigate('Login');
     },
     response => {
-      WL.Logger.error('logout onFailure: ' + JSON.stringify(response));
+      console.log('error in loging out' + JSON.stringify(response));
     }
   );
-
 };
 const Settings: () => React$Node = () => (
   <>

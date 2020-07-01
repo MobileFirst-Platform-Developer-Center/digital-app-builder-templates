@@ -9,6 +9,7 @@ import {
 
 import styles from './HomeStyle';
 import { TouchableOpacity } from 'react-native-gesture-handler';
+import { WLClient, WLAuthorizationManager } from 'react-native-ibm-mobilefirst';
 
 class Home extends React.Component {
   constructor(props) {
@@ -40,6 +41,30 @@ class Home extends React.Component {
       }
     ];
   }
+  componentDidMount() {
+    this.props.navigation.setOptions({
+      headerRight: () => (
+        <TouchableOpacity
+          style={{ paddingRight: 10 }}
+          onPress={() => {
+            this.logout();
+          }}
+        >
+          <Text style={{ color: 'blue' }}>Logout</Text>
+        </TouchableOpacity>
+      )
+    });
+  }
+  logout = () => {
+    WLAuthorizationManager.logout('UserLogin').then(
+      () => {
+        this.props.navigation.navigate('Login');
+      },
+      response => {
+        console.log('error in loging out' + JSON.stringify(response));
+      }
+    );
+  };
   navigatePage = page => {
     this.props.navigation.navigate(page);
   };

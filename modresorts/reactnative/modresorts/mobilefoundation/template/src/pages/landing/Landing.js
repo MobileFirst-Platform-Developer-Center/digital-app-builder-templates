@@ -9,11 +9,40 @@ import {
   TouchableOpacity
 } from 'react-native';
 import styles from './LandingStyle';
+import { WLClient, WLAuthorizationManager } from 'react-native-ibm-mobilefirst';
+
 class Landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
   }
+  componentDidMount() {
+    this.props.navigation.setOptions({
+      headerRight: () => (
+        <TouchableOpacity
+          style={{ paddingRight: 3 }}
+          onPress={() => {
+            this.logout();
+          }}
+        >
+          <Image
+            style={{ height: 25, width: 25 }}
+            source={require('../../../assets/images/logout.png')}
+          />
+        </TouchableOpacity>
+      )
+    });
+  }
+  logout = () => {
+    WLAuthorizationManager.logout('UserLogin').then(
+      () => {
+        this.props.navigation.navigate('Home');
+      },
+      response => {
+        console.log('error in loging out' + JSON.stringify(response));
+      }
+    );
+  };
   render() {
     return (
       <>

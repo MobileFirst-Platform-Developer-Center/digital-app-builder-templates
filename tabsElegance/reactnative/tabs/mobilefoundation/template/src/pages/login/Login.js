@@ -46,7 +46,6 @@ class Login extends React.Component {
     });
   };
   login() {
-    this.props.navigation.navigate('Tab');
     const creds = {
       username: this.state.username,
       password: this.state.password
