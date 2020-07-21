@@ -25,6 +25,19 @@ class Home extends React.Component {
     const userLoginCH = new UserLoginCH(this.onLoginsuccess, this.onFailure);
     WLClient.registerChallengeHandler(userLoginCH, '');
   }
+  componentDidMount() {
+    this.props.navigation.addListener('blur', this.resetState);
+  }
+  componentWillUnmount() {
+    this.props.navigation.removeListener('blur');
+  }
+  resetState = () => {
+    this.setState({
+      username: '',
+      password: '',
+      user: ''
+    });
+  };
   onUserNameChange = uname => {
     this.setState({
       username: uname
@@ -50,6 +63,7 @@ class Home extends React.Component {
     const securityCheckName = 'UserLogin';
     WLAuthorizationManager.login(securityCheckName, creds).then(
       response => {
+        this.props.navigation.navigate('Landing');
         console.log('login success');
       },
       error => {
