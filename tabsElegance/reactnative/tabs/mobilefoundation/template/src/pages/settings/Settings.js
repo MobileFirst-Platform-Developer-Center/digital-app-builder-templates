@@ -3,17 +3,17 @@ import { View, Text, Image, TouchableOpacity } from 'react-native';
 import { WLClient, WLAuthorizationManager } from 'react-native-ibm-mobilefirst';
 import styles from './SettingsStyle';
 
-logout = () => {
+logout = (props) => {
   WLAuthorizationManager.logout('UserLogin').then(
     () => {
-      this.props.navigation.navigate('Login');
+      props.navigation.navigate('Login');
     },
     response => {
       console.log('error in loging out' + JSON.stringify(response));
     }
   );
 };
-const Settings: () => React$Node = () => (
+const Settings: () => React$Node = (props) => (
   <>
     <View style={styles.parent}>
       <View style={styles.skewContainer} />
@@ -39,7 +39,7 @@ const Settings: () => React$Node = () => (
           <TouchableOpacity
             style={{ width: '30%' }}
             onPress={() => {
-              this.logout();
+              logout(props);
             }}
           >
             <Image
