@@ -25,6 +25,19 @@ class Login extends React.Component {
     const userLoginCH = new UserLoginCH(this.onLoginsuccess, this.onFailure);
     WLClient.registerChallengeHandler(userLoginCH, '');
   }
+  componentDidMount() {
+    this.props.navigation.addListener('blur', this.resetState);
+  }
+  componentWillUnmount() {
+    this.props.navigation.removeListener('blur');
+  }
+  resetState = () => {
+    this.setState({
+      username: '',
+      password: '',
+      user: ''
+    });
+  };
   onLoginsuccess = val => {
     this.props.navigation.navigate('Home');
     this.refs.defaultToastBottom.ShowToastFunction(
@@ -55,6 +68,7 @@ class Login extends React.Component {
     const securityCheckName = 'UserLogin';
     WLAuthorizationManager.login(securityCheckName, creds).then(
       response => {
+        this.props.navigation.navigate('Tab');
         console.log('login success');
       },
       error => {
